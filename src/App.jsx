@@ -6,6 +6,7 @@ import MySkill from "./component/myskill";
 import Contact from "./component/contact";
 import Footer from "./component/footer";
 import Certificate from "./component/certificate";
+import Gallery from "./component/Gallery";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <HeroSection />
         <About />
         <Certificate />
+        
         <Projek />
         <MySkill />
         <Contact />

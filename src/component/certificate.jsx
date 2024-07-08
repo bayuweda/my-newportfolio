@@ -75,13 +75,13 @@ function Card({ image, name, pdf }) {
   };
 
   return (
-    <div className="bg-blue-600/5 rounded-lg overflow-hidden shadow-lg lg:w-96 md:w-1/3 m-3 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110">
+    <div className="bg-blue-600/5 mx-10 md:mx-3 lg:mx-3 rounded-lg overflow-hidden shadow-lg lg:w-96 md:w-1/3  transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 m-2">
       <img src={image} alt="" className="w-full" />
       <div className="px-2 py-4">
         <h1 className="text-primary">{name}</h1>
         <button
           onClick={handleDownload}
-          className="text-white text-sm font-light"
+          className="text-white text-sm font-light hover:text-primary"
         >
           Download sertifikat
         </button>
@@ -110,10 +110,7 @@ export default function Certificate() {
             <h1 className="text-white text-4xl md:text-4xl lg:text-5xl">
               Sertifikat <span className="text-primary">saya</span>
             </h1>
-            <p className="text-white font-light text-sm mt-4 md:hidden sm:hidden lg:block">
-              Hallo selamat datang, disini saya akan menampilkan beberapa
-              projects web dan web desain yang sudah saya kerjakan.
-            </p>
+            
           </div>
           <div className="container flex flex-wrap justify-center mt-10">
             {certificateToShow.map((certif) => (

@@ -3,7 +3,7 @@ export default function MySkill() {
     <>
       <section
         id="keahlian"
-        className="bg-gradient-to-t from-blue-500/5 mt-16 md:mt-32"
+        className="bg-gradient-to-t from-blue-500/5 mt-16 md:mt-32 "
       >
         <div className="container mx-auto px-4">
           <div className="py-8 md:py-12 flex flex-col items-center">
@@ -23,7 +23,7 @@ export default function MySkill() {
             <SkillCard image="/asset/figma.png" level="Pemula" />
             <SkillCard image="/asset/bootstrap.png" level="Pemula" />
             <SkillCard image="/asset/nodejs.png" level="Pemula" />
-            <SkillCard image="/asset/tailwind-css-icon 1.png" level="Pemula" />
+            <SkillCard image="/asset/tailwind.png" level="Pemula" />
             <SkillCard image="/asset/logo192.png" level="Pemula" />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function MySkill() {
 // eslint-disable-next-line react/prop-types
 function SkillCard({ image, level }) {
   return (
-    <div className="flex flex-col items-center justify-center  shadow-sm transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-110 shadow-sky-950 hover:shadow-primary w-full sm:w-1/2 md:w-1/3 lg:w-1/6 m-2">
+    <div className="flex flex-col items-center justify-center  shadow-sm transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-110 shadow-sky-950 hover:shadow-primary w-full sm:w-1/2 md:w-1/3 lg:w-1/6 m-2 mx-14 lg:mx-0 md:mx-0">
       <img
         src={image}
         alt=""

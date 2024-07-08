@@ -19,7 +19,8 @@ function DropdownMenu({ options }) {
           />
         </Menu.Button>
       </div>
-      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+
+      <Menu.Items className="absolute right-0 z-10 mt-2 w-56  origin-top-right rounded-md bg-background shadow-lg ring-1 ring-primary  focus:outline-none">
         <div className="py-1">
           {options.map((option, index) => (
             <Menu.Item key={index}>
@@ -27,7 +28,7 @@ function DropdownMenu({ options }) {
                 <a
                   href={option.url}
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active ? "bg-gray-100 text-gray-900" : "text-gray",
                     "block px-4 py-2 text-sm"
                   )}
                 >
@@ -72,7 +73,7 @@ export default function Navbar() {
           scrolled ? "bg-background" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto ">
           <div className="flex justify-between items-center py-4 px-6">
             <div className="flex gap-2">
               <img src="/asset/wedadev.png" alt="" />
@@ -134,9 +135,9 @@ export default function Navbar() {
               <a href="#tentang">Tentang saya</a>
               <DropdownMenu
                 options={[
-                  { label: "Account settings", url: "#" },
-                  { label: "Support", url: "#" },
-                  { label: "License", url: "#" },
+                  { label: "Sartifikat saya", url: "#certificate" },
+                  { label: "Gallery", url: "#" },
+                  
                   // Add more options as needed
                 ]}
               />
