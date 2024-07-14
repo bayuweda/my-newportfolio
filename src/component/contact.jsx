@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Contact() {
-  const [formData, setFormData] = useState({
-    nama: '',
-    email: '',
-    pesan: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+const Contact = () => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Lakukan sesuatu dengan formData, seperti mengirim data ke server
-    console.log('Form data:', formData);
-    // Reset form
-    setFormData({ nama: '', email: '', pesan: '' });
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4IafeniHHXMPk2Ni7RVEnAULDyxdiBeKJO2m0VeJ22pgiopNN9C_2qp31QOQ4XwSdVw/exec';
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: formData
+      });
+      console.log('Success!', response);
+    } catch (error) {
+      console.error('Error!', error.message);
+    }
   };
 
   return (
@@ -30,11 +27,11 @@ export default function Contact() {
                 Hubungi <span className="text-primary">saya</span>
               </h1>
               <p className="text-white font-light text-sm mt-4">
-                Punya ide project untuk dikerjakan bersama-sama? ayoo hubungi saya di bawah ini!
+                Punya ide project untuk dikerjakan bersama-sama? Ayo hubungi saya di bawah ini!
               </p>
             </div>
             <div className="mt-4 w-full flex justify-center">
-              <form onSubmit={handleSubmit} className="mb-8 w-72 lg:w-full md:w-full">
+              <form className="mb-8 w-72 lg:w-full md:w-full" name="submit-to-google-sheet" onSubmit={handleSubmit}>
                 <label className="block text-sm font-medium text-gray-600">
                   Nama:
                 </label>
@@ -42,9 +39,7 @@ export default function Contact() {
                   type="text"
                   id="nama"
                   name="nama"
-                  value={formData.nama}
-                  onChange={handleChange}
-                  className="mt-1 p-2 border border-sky-500 rounded-md w-full bg-inherit"
+                  className="mt-1 p-2 border border-sky-500 text-white rounded-md w-full bg-inherit"
                 />
 
                 <label className="block mt-4 text-sm font-medium text-gray-600">
@@ -54,21 +49,17 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="mt-1 p-2 border border-sky-500 rounded-md w-full bg-inherit"
+                  className="mt-1 p-2 border border-sky-500 text-white rounded-md w-full bg-inherit"
                 />
 
-                <label className="block mt-4 text-sm font-medium text-gray-600">
+                <label className="block text-sm font-medium text-gray-600">
                   Pesan:
                 </label>
                 <textarea
                   id="pesan"
                   name="pesan"
                   rows="4"
-                  value={formData.pesan}
-                  onChange={handleChange}
-                  className="mt-1 p-2 border border-sky-500 rounded-md w-full bg-inherit"
+                  className="mt-1 p-2 border border-sky-500 text-white rounded-md w-full bg-inherit"
                 ></textarea>
 
                 <button
@@ -84,4 +75,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;

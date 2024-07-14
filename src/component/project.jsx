@@ -8,6 +8,8 @@ const projects = [
     type: "web",
     icon: "/asset/Group 5.png",
     tech: ["/asset/html.png", "/asset/css.png", "/asset/bootstrap.png"],
+    demo:"https://bayuweda.github.io/Rumah-Impian/",
+    source:"https://github.com/bayuweda/Rumah-Impian.git",
     description:
       "Sebuah website company profile yang saya pelajari dari chanel youtube creative academy, tujuan dari pembuatan website ini adalah untuk belajar menggunakan bootstrap",
   },
@@ -18,6 +20,8 @@ const projects = [
     type: "web",
     icon: "/asset/Group 5.png",
     tech: ["/asset/html.png", "/asset/css.png"],
+    demo:"https://bayuweda.github.io/coffe-house/",
+    source:"https://github.com/bayuweda/coffe-house.git",
     description:
       "merupakan website cofee sederhana yang saya kerjakan waktu belajar html css dasar",
   },
@@ -29,6 +33,8 @@ const projects = [
     icon: "/asset/Group 5.png",
 
     tech: ["/asset/tailwind.png", "/asset/logo192.png"],
+    demo:"",
+    source:"https://github.com/bayuweda/furniture.git",
     description:
       "sebuah website e-commerce sederhana yang belum menggunakan database, proyek ini saya kerjakan untuk  mengasah kemampuan saya dalam menggunakan Reactjs",
   },
@@ -43,11 +49,28 @@ const projects = [
       "/asset/css.png",
       "/asset/javascript.png",
     ],
+    demo:"https://bayuweda.github.io/kenangansenja.github.io/",
+    source:"https://github.com/bayuweda/kenangansenja.github.io.git",
     description:
       "sebuah website coffe yang dibuat menggunakan html css dan javascript, website ini dibuat dengan mengikuti tutorial dari chanel wpu, disini saya belajar js sedikit dengan pembuatan responsive navbar",
   },
   {
     id: 5,
+    name: "Nuansa Firniture",
+    image: "/asset/nuansa.jpg",
+    type: "web",
+    icon: "/asset/Group 5.png",
+    tech: [
+      "/asset/html.png",
+      "/asset/tailwind.png",
+    ],
+    demo:"https://nuansafurniture.com",
+    source:"https://github.com/bayuweda/Nuansa-furniture.git",
+    description:
+      "sebuah website company profile yang saya kerjakan untuk teman saya yang memiliki usaha furniture",
+  },
+  {
+    id: 6,
     name: "Portfolio design",
     image: "/asset/design-portfolio.jpg",
     type: "design",
@@ -56,22 +79,35 @@ const projects = [
       "/asset/figma.png"
      
     ],
+    demo:"https://www.figma.com/proto/og03CCdT70V7J2bOnfJzVX/bayu-weda-portfolio?node-id=2-48&t=Bo4i3Es3AnLmedEy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    source:"https://www.figma.com/community/file/1394139251892953845",
     description:
-      "ini merupakan design portfolio saya yang saya kerjakan menggunakan figma, teman-teman yang berminat menggunakan design ini silahkan klik tulisan warna biru ya!!",
+      "ini merupakan design portfolio saya yang saya kerjakan menggunakan figma, teman-teman yang berminat menggunakan design ini silahkan klik tulisan warna putih dan untuk melihat demo atau preview silahkan tekan tulisan warna biru ya!!",
   },
 ];
 
-function Card({ image, type, icon, name, tech, description }) {
+function Card({ image, type, icon, name, tech, description, demo, source }) {
+  const handleDemoClick = (event) => {
+    if (!demo) {
+      event.preventDefault();
+      alert("maaf website ini belum di deploy");
+    }
+  };
+
   return (
-    <div className="bg-blue-600/5  md:mx-3 lg:mx-3 rounded-lg overflow-hidden shadow-xl lg:w-[580px] lg:h-auto md:w-full m-3 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 flex flex-col md:flex-nowrap md:flex-row">
-      <div className="w-full flex flex-col lg:shadow-2xl ">
+    <div className="bg-blue-600/5 md:mx-3 lg:mx-3 rounded-lg overflow-hidden shadow-xl lg:w-[580px] lg:h-auto md:w-full m-3 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 flex flex-col md:flex-nowrap md:flex-row">
+      <div className="w-full flex flex-col lg:shadow-2xl">
         <img src={image} alt={name} className="w-auto h-auto object-cover" />
         <div className="px-2 py-2 flex justify-between items-end">
           <div>
-            <h1 className="text-primary cursor-pointer">{type}</h1>
+            <h1 className="text-primary cursor-pointer">
+              <a href={demo || "#"} onClick={handleDemoClick}>
+                {type}
+              </a>
+            </h1>
             <a
-              href="#"
-              className=" hover:text-primary flex items-baseline gap-2 text-white text-sm "
+              href={source}
+              className="hover:text-primary flex items-baseline gap-2 text-white text-sm"
             >
               <img src={icon} alt={`${name} icon`} className="h-2" />
               {name}
@@ -83,13 +119,13 @@ function Card({ image, type, icon, name, tech, description }) {
                 key={index}
                 src={techImage}
                 alt={`Tech ${index}`}
-                className="w-5 h-5  lg:w-8 lg:h-8"
+                className="w-5 h-5 lg:w-8 lg:h-8"
               />
             ))}
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[70%] p-4 text-center md:border-l-0  border rounded-lg border-primary lg:border-0 ">
+      <div className="w-full lg:w-[70%] p-4 text-center md:border-l-0 border rounded-lg border-primary lg:border-0">
         <h1 className="text-xl font-normal text-white mb-2">Deskripsi</h1>
         <p className="text-gray-400 text-sm font-light">{description}</p>
       </div>
@@ -163,6 +199,8 @@ export default function Projek() {
                   icon={project.icon}
                   name={project.name}
                   tech={project.tech}
+                  demo={project.demo}
+                  source={project.source}
                   description={project.description}
                 />
               ))}
