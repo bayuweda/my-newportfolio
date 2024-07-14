@@ -6,7 +6,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="md:mr-10 pl-5 md:pl-0 lg:pl-0">
               <img
-                src="/asset/Group 4.png"
+                src="./src/asset/Group 4.png"
                 alt=""
                 className="w-full md:w-auto"
               />

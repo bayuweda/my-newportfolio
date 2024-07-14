@@ -36,18 +36,18 @@ export default function HeroSection() {
                 
                 <div className="flex h-7 gap-6">
                   <a href="https://www.instagram.com/bayuweda24">
-                    <img src="/asset/instagram 1.png" alt="" />
+                    <img src="./src/asset/instagram 1.png" alt="" />
                   </a>
 
-                  <a href="https://www.linkedin.com/in/bayu-weda-b030b1279"><img src="/asset/linkedin 1.png" alt="" /></a>
+                  <a href="https://www.linkedin.com/in/bayu-weda-b030b1279"><img src="./src/asset/linkedin 1.png" alt="" /></a>
                   
                   
-                  <a href=""><img src="/asset/facebook.svg" alt="" /></a>
+                  <a href=""><img src="./src/asset/facebook.svg" alt="" /></a>
                 </div>
               </div>
 
               <div className="hover:ring-2 ring-primary min-w-min inline-flex p-1 items-baseline gap-2 mt-2">
-                <img src="/asset/download-icon.png" alt="" />
+                <img src="./src/asset/download-icon.png" alt="" />
                 <h1 className="text-white font-light cursor-pointer">
                   Unduh CV
                 </h1>
@@ -58,32 +58,32 @@ export default function HeroSection() {
             <div className=" w-full lg:w-1/2 md:w-1/2 sm:w-full mt-10  lg:mt-0 md:mx-auto  ">
               <div className="md:-ml-32 md:mb-11 lg:ml-0 lg:mb-0 sm:-ml-16 hidden lg:block md:block">
                   <img
-                    src="/asset/bootstrap.png"
+                    src="./src/asset/bootstrap.png"
                     alt="Bootstrap"
                     className="z-10 mt-16 ml-32 -rotate-45 absolute animate-goyang"
                   />
                   <img
-                    src="/asset/nodejs.png"
+                    src="./src/asset/nodejs.png"
                     alt="Node.js"
                     className="z-20 mt-20 ml-64 absolute animate-naik"
                   />
                   <img
-                    src="/asset/javascript.png"
+                    src="./src/asset/javascript.png"
                     alt="JavaScript"
                     className="z-20 mt-16 ml-96 absolute rotate-45 animate-pulse"
                   />
                   <img
-                    src="/asset/figma.png"
+                    src="./src/asset/figma.png"
                     alt="Figma"
                     className="z-20 mt-52 ml-36 absolute -rotate-12 animate-rightLeft"
                   />
                   <img
-                    src="/asset/css.png"
+                    src="./src/asset/css.png"
                     alt="CSS"
                     className="z-20 absolute mt-60 ml-96 rotate-12 animate-goyang"
                   />
                   <img
-                    src="/asset/html.png"
+                    src="./src/asset/html.png"
                     alt="HTML"
                     className="z-20 absolute mt-80 ml-60 animate-pulse"
                   />
@@ -91,37 +91,37 @@ export default function HeroSection() {
                 {/* tampilan ponsel */}
               <div className=" relative w-14  lg:hidden md:hidden">
                   <img
-                    src="/asset/bootstrap.png"
+                    src="./src/asset/bootstrap.png"
                     alt="Bootstrap"
                     className="-rotate-45 absolute animate-goyang mt-10 ml-20"
                   />
                   <img
-                    src="/asset/nodejs.png"
+                    src="./src/asset/nodejs.png"
                     alt="Node.js"
                     className=" absolute animate-naik mt-10 ml-40"
                   />
                   <img
-                    src="/asset/javascript.png"
+                    src="./src/asset/javascript.png"
                     alt="JavaScript"
                     className="absolute rotate-45 animate-pulse mt-10 ml-64"
                   />
                   <img
-                    src="/asset/figma.png"
+                    src="./src/asset/figma.png"
                     alt="Figma"
                     className="-rotate-12 animate-rightLeft absolute mt-36 ml-24"
                   />
                   <img
-                    src="/asset/css.png"
+                    src="./src/asset/css.png"
                     alt="CSS"
                     className="absolute rotate-12 animate-goyang mt-40 ml-64"
                   />
                   <img
-                    src="/asset/html.png"
+                    src="./src/asset/html.png"
                     alt="HTML"
                     className="absolute  animate-pulse mt-60 ml-40"
                   />
                 </div>
-                <img src="/asset/hero.png" alt="Hero" className="z-10" />
+                <img src="./src/asset/hero.png" alt="Hero" className="z-10" />
             </div>
             
             

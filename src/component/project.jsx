@@ -4,10 +4,10 @@ const projects = [
   {
     id: 1,
     name: "Rumah impian",
-    image: "/asset/rumah impian.png",
+    image: "./src/asset/rumah impian.png",
     type: "web",
-    icon: "/asset/Group 5.png",
-    tech: ["/asset/html.png", "/asset/css.png", "/asset/bootstrap.png"],
+    icon: "./src/asset/Group 5.png",
+    tech: ["./src/asset/html.png", "./src/asset/css.png", "./src/asset/bootstrap.png"],
     demo:"https://bayuweda.github.io/Rumah-Impian/",
     source:"https://github.com/bayuweda/Rumah-Impian.git",
     description:
@@ -16,10 +16,10 @@ const projects = [
   {
     id: 2,
     name: "Coffee House",
-    image: "/asset/website kopi wpu.png",
+    image: "./src/asset/website kopi wpu.png",
     type: "web",
-    icon: "/asset/Group 5.png",
-    tech: ["/asset/html.png", "/asset/css.png"],
+    icon: "./src/asset/Group 5.png",
+    tech: ["./src/asset/html.png", "./src/asset/css.png"],
     demo:"https://bayuweda.github.io/coffe-house/",
     source:"https://github.com/bayuweda/coffe-house.git",
     description:
@@ -28,11 +28,11 @@ const projects = [
   {
     id: 3,
     name: "AFTER.NOON",
-    image: "/asset/after.noon 1.png",
+    image: "./src/asset/after.noon 1.png",
     type: "web",
-    icon: "/asset/Group 5.png",
+    icon: "./src/asset/Group 5.png",
 
-    tech: ["/asset/tailwind.png", "/asset/logo192.png"],
+    tech: ["./src/asset/tailwind.png", "./src/asset/logo192.png"],
     demo:"",
     source:"https://github.com/bayuweda/furniture.git",
     description:
@@ -41,13 +41,13 @@ const projects = [
   {
     id: 4,
     name: "Kenangan senja",
-    image: "/asset/kenangan-senja 1.png",
+    image: "./src/asset/kenangan-senja 1.png",
     type: "web",
-    icon: "/asset/Group 5.png",
+    icon: "./src/asset/Group 5.png",
     tech: [
-      "/asset/html.png",
-      "/asset/css.png",
-      "/asset/javascript.png",
+      "./src/asset/html.png",
+      "./src/asset/css.png",
+      "./src/asset/javascript.png",
     ],
     demo:"https://bayuweda.github.io/kenangansenja.github.io/",
     source:"https://github.com/bayuweda/kenangansenja.github.io.git",
@@ -57,12 +57,12 @@ const projects = [
   {
     id: 5,
     name: "Nuansa Firniture",
-    image: "/asset/nuansa.jpg",
+    image: "./src/asset/nuansa.jpg",
     type: "web",
-    icon: "/asset/Group 5.png",
+    icon: "./src/asset/Group 5.png",
     tech: [
-      "/asset/html.png",
-      "/asset/tailwind.png",
+      "./src/asset/html.png",
+      "./src/asset/tailwind.png",
     ],
     demo:"https://nuansafurniture.com",
     source:"https://github.com/bayuweda/Nuansa-furniture.git",
@@ -72,11 +72,11 @@ const projects = [
   {
     id: 6,
     name: "Portfolio design",
-    image: "/asset/design-portfolio.jpg",
+    image: "./src/asset/design-portfolio.jpg",
     type: "design",
-    icon: "/asset/Group 5.png",
+    icon: "./src/asset/Group 5.png",
     tech: [
-      "/asset/figma.png"
+      "./src/asset/figma.png"
      
     ],
     demo:"https://www.figma.com/proto/og03CCdT70V7J2bOnfJzVX/bayu-weda-portfolio?node-id=2-48&t=Bo4i3Es3AnLmedEy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
@@ -214,9 +214,9 @@ export default function Projek() {
                 {showAllProjects ? "Tampilkan sedikit" : "Tampilkan semua"}
                 <span className="text-xl pl-2">
                   {showAllProjects ? (
-                    <img src="/asset/arrow-left.png" alt="" />
+                    <img src="./src/asset/arrow-left.png" alt="" />
                   ) : (
-                    <img src="/asset/arrow-right 1.png" alt="" />
+                    <img src="./src/asset/arrow-right 1.png" alt="" />
                   )}
                 </span>
               </button>

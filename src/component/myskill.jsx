@@ -17,14 +17,14 @@ export default function MySkill() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-            <SkillCard image="/asset/pngwing 3.png" level="Ahli" />
-            <SkillCard image="/asset/css.png" level="Ahli" />
-            <SkillCard image="/asset/javascript.png" level="Menengah" />
-            <SkillCard image="/asset/figma.png" level="Pemula" />
-            <SkillCard image="/asset/bootstrap.png" level="Pemula" />
-            <SkillCard image="/asset/nodejs.png" level="Pemula" />
-            <SkillCard image="/asset/tailwind.png" level="Pemula" />
-            <SkillCard image="/asset/logo192.png" level="Pemula" />
+            <SkillCard image="./src/asset/pngwing 3.png" level="Ahli" />
+            <SkillCard image="./src/asset/css.png" level="Ahli" />
+            <SkillCard image="./src/asset/javascript.png" level="Menengah" />
+            <SkillCard image="./src/asset/figma.png" level="Pemula" />
+            <SkillCard image="./src/asset/bootstrap.png" level="Pemula" />
+            <SkillCard image="./src/asset/nodejs.png" level="Pemula" />
+            <SkillCard image="./src/asset/tailwind.png" level="Pemula" />
+            <SkillCard image="./src/asset/logo192.png" level="Pemula" />
           </div>
         </div>
       </section>

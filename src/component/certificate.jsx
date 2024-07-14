@@ -4,62 +4,62 @@ const certificate = [
   {
     id: 1,
     name: "Belajar AJAX dan Web Api",
-    image: "/asset/sartifikat/gambar/sertif_ajax.jpg",
-    pdf: "/asset/sartifikat/certificate ajax.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_ajax.jpg",
+    pdf: "./src/asset/sartifikat/certificate ajax.pdf",
   },
   {
     id: 2,
     name: "Javascript Asynchronous",
-    pdf: "/asset/sartifikat/certificate asyn.pdf",
-    image: "/asset/sartifikat/gambar/sertif_asyn.jpg",
+    pdf: "./src/asset/sartifikat/certificate asyn.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_asyn.jpg",
   },
   {
     id: 3,
     name: "Dasar Css",
-    pdf: "/asset/sartifikat/sertifikatcss.pdf",
-    image: "/asset/sartifikat/gambar/sertif_dasarcss.jpg",
+    pdf: "./src/asset/sartifikat/sertifikatcss.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_dasarcss.jpg",
   },
   {
     id: 4,
     name: "Dasar Pemrograman",
-    pdf: "/asset/sartifikat/sertifikat_dasar pemrograman.pdf",
-    image: "/asset/sartifikat/gambar/sertif_dasarpemrograman.jpg",
+    pdf: "./src/asset/sartifikat/sertifikat_dasar pemrograman.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_dasarpemrograman.jpg",
   },
   {
     id: 5,
     name: "Belajar Git",
-    pdf: "/asset/sartifikat/sertifikat_belajar git.pdf",
-    image: "/asset/sartifikat/gambar/sertif_git.jpg",
+    pdf: "./src/asset/sartifikat/sertifikat_belajar git.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_git.jpg",
   },
   {
     id: 6,
     name: "Belajar SQL",
-    pdf: "/asset/sartifikat/sertifikat_sql.pdf",
-    image: "/asset/sartifikat/gambar/sertifsql.jpg",
+    pdf: "./src/asset/sartifikat/sertifikat_sql.pdf",
+    image: "./src/asset/sartifikat/gambar/sertifsql.jpg",
   },
   {
     id: 7,
     name: "Belajar ReactJS",
-    pdf: "/asset/sartifikat/certificate reactjs01.pdf",
-    image: "/asset/sartifikat/gambar/sertif_react02.jpg",
+    pdf: "./src/asset/sartifikat/certificate reactjs01.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_react02.jpg",
   },
   {
     id: 8,
     name: "ReactJS Component",
-    pdf: "/asset/sartifikat/certificate react02.pdf",
-    image: "/asset/sartifikat/gambar/sertif_react03.jpg",
+    pdf: "./src/asset/sartifikat/certificate react02.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_react03.jpg",
   },
   {
     id: 9,
     name: "ReactJS State",
-    pdf: "/asset/sartifikat/certificate.pdf",
-    image: "/asset/sartifikat/gambar/sertif_react01.jpg",
+    pdf: "./src/asset/sartifikat/certificate.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_react01.jpg",
   },
   {
     id: 10,
     name: "Belajar HTML",
-    pdf: "/asset/sartifikat/certificate html.pdf",
-    image: "/asset/sartifikat/gambar/sertif_html.jpg",
+    pdf: "./src/asset/sartifikat/certificate html.pdf",
+    image: "./src/asset/sartifikat/gambar/sertif_html.jpg",
   },
 ];
 
@@ -131,9 +131,9 @@ export default function Certificate() {
             {showAllCertificate ? "Tampilkan sedikit" : "Tampilkan semua"}
             <span className="text-xl pl-2">
               {showAllCertificate ? (
-                <img src="/asset/arrow-left.png" alt="" />
+                <img src="./src/asset/arrow-left.png" alt="" />
               ) : (
-                <img src="/asset/arrow-right 1.png" alt="" />
+                <img src="./src/asset/arrow-right 1.png" alt="" />
               )}
             </span>
           </button>

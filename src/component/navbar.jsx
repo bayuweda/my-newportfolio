@@ -76,7 +76,7 @@ export default function Navbar() {
         <div className="container mx-auto ">
           <div className="flex justify-between items-center py-4 px-6">
             <div className="flex gap-2">
-              <img src="/asset/wedadev.png" alt="" />
+              <img src="./src/asset/wedadev.png" alt="" />
               <h1 className="font-semibold text-2xl text-white">WedaDev</h1>
             </div>
             <nav className="flex">
@@ -111,7 +111,7 @@ export default function Navbar() {
               </ul>
               <div className="border-1 border-sky-50 lg:hidden">
                 <img
-                  src={isOpen ? "/asset/Group 22.png" : "/asset/humberger.png"}
+                  src={isOpen ? "./src/asset/Group 22.png" : "./src/asset/humberger.png"}
                   alt=""
                   className="m-2"
                   onClick={toggleMenu}
