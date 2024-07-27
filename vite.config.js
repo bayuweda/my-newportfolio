@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+base: "/my-newportfolio"
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
